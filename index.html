@@ -1,0 +1,535 @@
+<!-- I don't know why you are looking at source code the page? Looking some where to hack? wrong place!-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Smart Honeypot, a custom honeypot intelligence system">
+    <meta name="author" content="SmartHoneypot">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Smart Honeypot - A Custom Honeypot Intelligence System</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- navbar
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><strong>Smart Honeypot</strong></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#intro">How it works?</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#plans">Get an Invitation</a></li>
+            <li><a href="https://blog.smarthoneypot.com">Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     /navbar -->
+    <!-- heading -->
+    <div class="container">
+      <div class="page-header">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <!---->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+               
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img id="img_lead" class="img-responsive" alt="Corrolation of all traffic with Geo tagging" src="img/smarthoneypot_dashboard1.png"></img>
+                    <!--<div class="carousel-caption">
+                        <h2>Corrolation of all traffic with Geo tagging</h2>
+                    </div>-->
+                  </div>
+                  <div class="item">
+                    <img id="img_lead" class="img-responsive" alt="Real time view of malicious commands and malware execution" src="img/smarthoneypot_dashboard2.png"></img>
+                    <!--<div class="carousel-caption">
+                        <h2>Real time view of malicious commands and malware execution</h2>
+                    </div>-->
+                  </div>
+                  <div class="item">
+                    <img id="img_lead" class="img-responsive" alt="A view of web attacks" src="img/smarthoneypot_dashboard3.png"></img>
+                    <!--<div class="carousel-caption">
+                        <h2>A view of web attacks</h2>
+                    </div>-->
+                  </div>
+                </div>
+              
+              </div> <!-- Carousel -->
+              </div>
+            </div>
+            <h1>Smart <span class="text-primary">Honeypot</span></h1>
+            <p class="lead">A custom honeypot intelligence system that is simple to deploy and easy to manage</p>
+            <p><a class="btn btn-primary btn-lg" role="button" href="index.html#plans">Get Your Invitation</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /heading -->
+    
+
+
+    <div class="container">
+      <!-- howto -->
+      <section id="intro">
+        <div class="well">
+          <h1 class="text-center">How it works?</h1>
+          <div id="img_container">
+            <img class="img-responsive" alt="How Smart Honeypot Works?" src="img/how_it_works.svg"></img>
+            <button class="btn btn-primary btn-sm btn-howto-1" id="howto-1" data-content="An attacker identifies a vulnerable host  in your network. However, in reality this host is a Smart Honeypot Ghost Sensor!">1</button>
+            <button class="btn btn-primary btn-sm btn-howto-2" id="howto-2" data-content="Attacker upload malcodes, execute  malicious commands, try to steal data or create a new user account!">2</button>
+            <button class="btn btn-primary btn-sm btn-howto-3" id="howto-3" data-content="Smart Honeypot carfuly examines every command and crafts a response back to the attacker to resemble a real vulnerable host.">3</button>
+            <button class="btn btn-primary btn-sm btn-howto-4" id="howto-4" data-content="Attacker in reality interacts with a Smart Honeypot in the Cloud. All interactions, network connection, drop-bys are captured by Smart Honeypot.">5</button>
+            <button class="btn btn-primary btn-sm btn-howto-5" id="howto-5" data-content="The captured data is displayed in a dashboard in real-time. The data is analysed and stored that can be also feed to log aggregators.">6</button>
+            <button class="btn btn-primary btn-sm btn-howto-6" id="howto-6" data-content="The Ghost Sensor only acts as a proxy and tunnels all traffic to and from Smart Honeypot host in the Cloud.">4</button>
+          </div>
+        </div>
+      </section>
+      <!-- /howto -->
+      
+      <!-- features -->
+      <section id="features">
+        <div class="well transparent">
+          <h1 class="text-center">Features</h1>
+          <div class="row row-padded">
+            <div class="col-sm-8">
+              <h2>Secret tactics</h2>
+              <p class="text-justify">A known honeypot system can be detected by adversaries and bypassed. <strong class="text-primary">A fundamental feature of any honeypot system is to be hidden from eyes of attackers.</strong> That’s why we keep Smart Honeypot tactics secret!</p>
+
+              <p class="text-justify">Smart Honeypot is custom made and is armed with undisclosed techniques to lure attackers revealing their actions.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span class="fa-stack fa-5x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-user-secret fa-stack-1x text-info"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row row-padded">
+            <div class="col-sm-8">
+              <h2>Ghost sensor</h2>
+              <p class="text-justify">We take away the risk of running a honeypot within your network by tunnelling all the honeypot traffic to our Cloud-based Smart Honeypot.</p>
+
+              <p class="text-justify">Effectively, <strong class="text-primary">your honeypot host on the network acts as a proxy and attackers in reality interact with our Cloud-based Smart Honeypot</strong>. You can also have a full Smart Honeypot deployed within your network.</p>
+           </div>
+            <div class="col-sm-4 text-center">
+              <span class="fa-stack fa-5x">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-puzzle-piece fa-stack-1x text-info"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row row-padded">
+            <div class="col-sm-8">
+              <h2>Customisable dashboard</h2>
+              <p class="text-justify">By default Smart Honeypot comes with <strong class="text-primary">a customisable dashboard that shows attackers activities in real time</strong> as they proceed with their intrusions.</p>
+
+              <p class="text-justify">Furthermore, Smart Honeypot the captured data is in a standard JSON format that can be integrated with many log aggregators or SIEM solutions (e.g. Splunk).</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span class="fa-stack fa-5x">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-pie-chart fa-stack-1x text-info"></i>
+              </span>
+            </div>
+          </div> 
+          <div class="row row-padded">
+            <div class="col-sm-8">
+              <h2>Simple to deploy</h2>
+              <p class="text-justify">You only need a (virtual) host with an Internet connectivity. <strong class="text-primary">By only running a few basic commands (or one auto-run script) your Smart Honeypot Ghost Sensor is ready</strong>.</p>
+
+              <p class="text-justify">You can place your Smart Honeypot host anywhere in your network (e.g. DMZ, internal network, etc.).</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span class="fa-stack fa-5x">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-cloud-download fa-stack-1x text-info"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row row-padded">
+            <div class="col-sm-8">
+              <h2>Easy to manage</h2>
+              <p class="text-justify">One of the main hassles of any honeypot system is management and maintenance over the time.</p>
+
+              <p class="text-justify">As <strong class="text-primary">we moved away all the complexity of running a honeypot to our managed Cloud-based Smart Honeypot, There is almost nothing you need to worry about</strong>.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span class="fa-stack fa-5x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-gear fa-spin fa-stack-1x text-info"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- /features -->
+      <!-- get subscribe -->
+      <div class="alert alert-dismissable alert-info text-center">
+        <p><h1>Find out more about Smart Honeypot</h1></p>
+        <p>Read our <a href="https://blog.smarthoneypot.com/category/smarthoneypot/" class="alert-link">attack intelligence</a> articles at our blog</p>
+      </div>
+      <!-- /get subscribe -->
+      <!-- faq -->
+      <section id="faq">
+        <div class="well">
+          <h1 class="text-center">FAQ</h1>
+          <div class="row">
+            <div class="col-md-6">
+
+              <h3 class="text-primary">Why do I need a honeypot?</h3>
+              <p class="text-justify">Commonly, a honeypot system is known to lure and profile attackers. This greatly underestimate the true power of a honeypot system. A honeypot system can increases cost of a successful compromise therefore it can protect your environment, can be used to blacklist attackers access to your other system, and can save resources for real users.</p>
+              
+              <h3 class="text-primary">What sort of attacks are captured?</h3>
+              <p class="text-justify">Any interaction with Smart Honeypot is considered as suspicious. There are both high-interactive and low-interactive services run by Smart Honeypot.</p>             
+              
+              <h3 class="text-primary">What is the problem with a known honeypot system?</h3>
+              <p class="text-justify">A fundamental feature of any honeypot system is to be stealthy, otherwise an attacker detect its presence and will prepare a counter. Smart Honeypot is custom made with innovative and undisclosed strategies to hide its presences from attackers and makes it ideal to profile them.</p>
+            </div>
+            <div class="col-md-6">
+              
+              <h3 class="text-primary">What if my real users interact with Smart Honeypot?</h3>
+              <p class="text-justify">If they are real users there is no incentive for them to continue their interactions with Smart Honeypot unless they have malicious purposes! Additionally, any real user activity can be spotted through Smart Honeypot dashboard.</p>
+              
+              <h3 class="text-primary">Can I use Smart Honeypot for my internal network?</h3>
+              <p class="text-justify">Yes, you can. This is indeed one of the best ways to discover suspicious internal activity that typically not being picked by a security system (or discover a malicious insider). ISPs, universities, hotels, public WiFi providers can benefit the most from an internal Smart Honeypot.</p>
+
+              <h3 class="text-primary">What kind of data is collected by Smart Honeypot?</h3>
+              <p class="text-justify">Like any other host within your network, Smart Honeypot captures the traffic that it receives. Therefore, it depends where Smart Honeypot host is deployed in your network.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /faq -->
+      <!-- pricing -->
+      <section id="plans">
+        <div class="well transparent">
+          <h1 class="text-center">Plans</h1>
+          <div class="row row-padded">
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-body">
+                  <table class="table table-condensed table-hover table-responsive">
+                    <tbody>
+                      <tr>
+                        <div class="alert alert-info text-center" id="vip-plan-header" data-content="Limited availability"><h1>VIP</h1></div>
+                      </tr>
+                      <tr id="vip-plan-1" data-content="An external or internal facing Smart Honeypot customised for your environment">
+                        <td><p class="lead"><span class="fa fa-check-square-o"></span> Custom Smart Honeypot</p></td>
+                      </tr>
+                      <tr id="vip-plan-3" data-content="A honeypot host that acts like a proxy and tunnels the traffic to our Cloud-base Smart Honeypot">
+                        <td><p class="lead"><span class="fa fa-check-square-o" id="vip-plan-6"></span> Multiple Ghost Sensors</p></td>
+                      </tr>
+                      <tr>
+                        <td><p class="lead"><span class="fa fa-check-square-o"></span> Real-time Dashboard Access</p></td>
+                      <tr id="vip-plan-4" data-content="Data is in JSON format and can be imported to many SIEM solutions (e.g. Splunk)">
+                        <td><p class="lead"><span class="fa fa-check-square-o" id="vip-plan-5"></span> On/Off-site Data Storage</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="text-center"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#invite-form">Invite me!</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-body">
+                <p class="text-justify">We're growing and experimenting different avenues to expand the Smart Honeypot. We're in look out for participant within different sectors to offer our Smart Honeypot VIP plan.</p>
+                <p class="text-justify">Click on the ‘Invite me’ button and let us know how and where you are planning to use Smart Honeypot. We will assess all the applications and will be in touch if you have been nominated for our VIP plan.</p>
+                <p class="text-justify">If you are running or part of a CERT organisation, a VPS/Cloud/Hosting provider, or managing a university network, we are actively looking to offer our VIP plan to your sector.</p>
+                <p class="text-justify">Access to our VIP plan is <strong>free of charge</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /pricing -->
+    </div>
+    <!-- footer -->
+    <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Smart Honeypot</h3>
+          <p class="text-justify">A honeypot intelligence system that is simple to deploy and easy to manage. It is armed with undisclosed tactics to lure attackers revealing their activities</p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Blog</h3>
+          <div id="rss"></div>
+        </div>
+        <div class="col-sm-2">
+          <h3>More</h3>
+          <p>
+            <a href="mailto:contact@[REMOVE-ME]smarthoneypot.com" title="contact@smarthoneypot.com"><span class="fa fa-envelope"></span></a> 
+            <a href="https://twitter.com/smarthoneypot" title="@smarthoneypot"><span class="fa fa-twitter"></span></a> 
+            <a href="contact_smarthoneypot.com.gpg" title="Our PGP key for secure email communication"><span class="fa fa-lock"></span></a>
+          </p>
+          <p><a href="index.html#intro">How it works?</a></p>
+          <p><a href="index.html#features">Features</a></p>
+          <p><a href="index.html#plans">Get an invitation</a></p>
+          <p><a href="https://blog.smarthoneypot.com">Blog</a></p>
+          <p><a href="index.html#faq">FAQ</a></p>
+        </div>
+      </div>
+      <hr>
+      <footer>
+        <p>
+The names and logos for Smart Honeypot are registered trademarks of Security Dimension Pty Ltd (ABN 82 605 590 154). Copyright &copy; 2015. All Rights Reserved.</p>
+      </footer>
+    </div>
+    </section> 
+    <!-- /footer -->
+
+    <!-- invite-form -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Invitation form" aria-hidden="true" id="invite-form">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Invitation form</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form" id="inviteForm">
+              <div class="form-group">
+                <label for="inputName" class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-9">
+                  <input name="eman" type="text" class="form-control" id="inputName" placeholder="Your name">
+                </div>
+              </div>
+              <div class="form-group has-feedback">
+                <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                  <input name="liame" type="text" class="form-control" id="inputEmail" placeholder="Your email">
+                  <span class="help-block" style="display: none;">Valid email please!</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputCompany" class="col-sm-3 control-label">Company</label>
+                <div class="col-sm-9">
+                  <input name="ynapmoc" type="text" class="form-control optional" id="inputCompany" placeholder="Your company name">
+                </div>
+              </div>
+              <div class="form-group has-feedback">
+                <label for="inputInterest" class="col-sm-3 control-label">Why are you interested?</label>
+                <div class="col-sm-9">
+                  <textarea name="tseretni" id="inputInterest" class="form-control" rows="4" placeholder="Tell us about yourself or your company, what type of website or online service do you have, what technology they run on, how Smart Honeypot benefits you ..."></textarea>
+                  <span class="help-block" style="display: none;">Show more interest!</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-9">
+                  <div class="checkbox">
+                    <label>
+                      <input name="swen" type="checkbox" checked>
+                      I am also interested in receiving latest Smart Honeypot news
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-default" id="inviteSubmit">Invite me</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /invite-form -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- rss js -->
+    <script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#rss').rssfeed('https://blog.smarthoneypot.com/category/smarthoneypot/feed/', {
+          limit: 2,
+          dateformat: 'dd/MM/yyyy',
+          showerror: false,
+          media: false,
+          header: false,
+          ssl: true
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      
+      //Smooth navigation
+      $("a[href^='#']").on('click', function(e) {
+
+         // prevent default anchor click behavior
+         e.preventDefault();
+
+         // store hash
+         var hash = this.hash;
+
+         // animate
+         $('html, body').animate({
+             scrollTop: $(this.hash).offset().top
+           }, 300, function(){
+
+             // when done, add hash to url
+             // (default click behaviour)
+             window.location.hash = hash;
+           });
+
+      });
+
+      //tooltips.popovers
+      $('#vip-plan-header').popover({trigger: 'manual',placement:'top'}).popover('show');
+      $('#vip-plan-1').popover({trigger: 'hover',placement:'auto'}).popover();
+      $('#vip-plan-3').popover({trigger: 'hover',placement:'auto'}).popover();
+      $('#vip-plan-4').popover({trigger: 'hover',placement:'auto'}).popover();
+      $('#howto-1').popover({trigger: 'hover',placement:'right'}).popover();
+      $('#howto-2').popover({trigger: 'hover',placement:'auto left'}).popover();
+      $('#howto-3').popover({trigger: 'hover',placement:'bottom'}).popover();
+      $('#howto-4').popover({trigger: 'hover',placement:'auto left'}).popover();
+      $('#howto-5').popover({trigger: 'hover',placement:'auto left'}).popover();
+      $('#howto-6').popover({trigger: 'hover',placement:'auto left'}).popover();
+      $('#howto-i').popover({trigger: 'hover',placement:'bottom'}).popover();
+
+     //process invitation form
+     $(document).ready(function() {
+          $("#inviteSubmit").click(function(e) {
+              //get input field values
+              var name       = $('input[name=eman]').val();
+              var company    = $('input[name=ynapmoc]').val();
+              var message    = $('textarea[name=tseretni]').val();
+              var news       = $('input[name=swen]').val();
+             
+              //clear any errors
+              contactForm.clearErrors();
+
+              //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
+              var hasErrors = false;
+              $('#inviteForm input,textarea').not('.optional').each(function() {
+                if (!$(this).val()) {
+                  hasErrors = true;
+                  contactForm.addError($(this));
+                }
+              });
+              var $email = $('input[name=liame]');
+              if (!contactForm.isValidEmail($email.val())) {
+                hasErrors = true;
+                contactForm.addError($email);
+              }
+
+              //if there are any errors return without sending e-mail
+              if (hasErrors) {
+                return false;
+              } else {
+                proceed = true;
+              }
+
+              //validation through other means!
+
+              //everything looks good! proceed...
+              if(proceed)
+              {
+                  //data to be sent to server
+                  post_data = {'name':name, 'email':$email.val(), 'company':company, 'message':message, 'news': news};
+                 
+                  //Ajax post data to server
+                  $.post('contact.php', post_data, function(response){  
+                     
+                      //load json data from server and output message    
+                      if(response.type == 'error')
+                      {
+                          output = '<div class="alert alert-danger alert-dismissable">'+response.text+'</div>';
+                      }else{
+                     
+                          output = '<div class="alert alert-success alert-dismissable">'+response.text+'</div>';
+                         
+                          //reset values in all input fields
+                          $('#inviteForm input').val('');
+                          $('#inviteForm textarea').val('');
+                      }
+                      $("#inviteSubmit").before(output);
+                  }, 'json');
+                 
+              }
+              //the magic to stop the form default action!
+              e.preventDefault();
+          });
+         
+          //reset previously set border colors and hide all message on .keyup()
+          //$("#inviteForm input, #inviteForm textarea").keyup(function() {
+              //$("#inviteForm input, #inviteForm textarea").css('border-color','');
+              //$("#invite-form-res").slideUp();
+          //});
+         
+      });
+
+      //namespace as not to pollute global namespace
+      var contactForm = {
+        isValidEmail: function (email) {
+          var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          return regex.test(email);
+        },
+        clearErrors: function () {
+          $('#inviteForm .help-block').hide();
+          $('#inviteForm .form-group').removeClass('has-error');
+        },
+        addError: function ($input) {
+          $input.siblings('.help-block').show();
+          $input.parent('.form-group').addClass('has-error');
+        },
+      };
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66166337-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
+<!-- I cannot believe you are reading this! Wanna something to hack? go to http://exploit-exercises.com/-->
