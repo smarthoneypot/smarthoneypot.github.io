@@ -474,7 +474,7 @@ The names and logos for Smart Honeypot are registered trademarks of Security Dim
                   post_data = {'name':name, 'email':$email.val(), 'company':company, 'message':message, 'news': news};
                  
                   //Ajax post data to server
-                  $.post('contact.php', post_data, function(response){  
+                  $.post('https://formspree.io/contact@smarthoneypot.com', post_data, function(response){  
                      
                       //load json data from server and output message    
                       if(response.type == 'error')
